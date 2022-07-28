@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ info.name }} | Resume</title>
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-10 bg-gray-100 font-sans font-light leading-normal tracking-normal">
+  <header class="mb-5">
+    <div class="mb-5">
+      <h1 class="text-gray-900 font-extrabold text-2xl">{{ info.name }}</h1>
+      <span>{{ info.headline }}</span>
+    </div>
+
+    <ul class="list-inside ml-3">
+      <li>
+        <span class="font-normal">Email:</span> <a class="text-blue-900" href="mailto:{{ info.email }}">{{ info.email }}</a>
+      </li>
+      <li>
+        <span class="font-normal">LinkedIn:</span> <a class="text-blue-900" href="{{ info.linkedin }}">{{ info.linkedin }}</a>
+      </li>
+      <li>
+        <span class="font-normal">GitHub:</span> <a class="text-blue-900" href="{{ info.github }}">{{ info.github }}</a>
+      </li>
+    </ul>
+  </header>
+
+  <div id="experience" class="mb-5">
+    <h2 class="py-2 text-gray-600 text-lg uppercase font-normal font-sans">Experience</h2>
+
+    <div>
+      {% for workplace in experience %}
+        <div class="pb-3 flex flex-row justify-between">
+          <div>
+            <span class="block text-lg font-medium">{{ workplace.name }}</span>
+            <span class="block italic">{{ workplace.title }}</span>
+          </div>
+
+          <div class="text-right">
+            <span class="block">{{ workplace.location }}</span>
+            <span class="block italic">{{ workplace.date }}</span>
+          </div>
+        </div>
+
+        <ul class="list-disc list-inside ml-3">
+          {% for subsection in workplace.subsections %}
+            <li>
+                {% if subsection.name %}
+                  <span class="font-medium mr-3">{{ subsection.name }}:</span>
+                {% endif %}
+
+                <span>{{ subsection.description }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="education" class="mb-5">
+    <h2 class="py-2 text-gray-600 text-lg uppercase font-normal font-sans">Education</h2>
+
+    <div>
+      {% for school in education %}
+        <div class="pb-3 flex flex-row justify-between">
+          <div>
+            <span class="block text-lg font-medium">{{ school.name }}</span>
+            <span class="block italic">{{ school.degree }}</span>
+          </div>
+
+          <div class="text-right">
+            <span class="block">{{ school.location }}</span>
+            <span class="italic">{{ school.date }}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="projects" class="mb-5">
+    <h2 class="py-2 text-gray-600 text-lg uppercase font-normal font-sans">Projects</h2>
+
+    <ul class="list-disc list-inside ml-3">
+      {% for project in projects %}
+        <li>
+          <a class="mr-1 font-normal" href="{{ project.url }}">{{ project.name }}:</a>
+          <span>{{ project.description }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div id="languages" class="mb-5">
+    <h2 class="py-2 text-gray-600 text-lg uppercase font-normal font-sans">Languages</h2>
+
+    <ul class="list-disc list-inside ml-3">
+      {% for language in languages %}
+        <li>
+          <span class="font-normal mr-1">{{ language.name }}:</span>
+          <span>{{ language.level }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div id="skills" class="mb-5">
+    <h2 class="py-2 text-gray-600 text-lg uppercase font-normal font-sans">Skills</h2>
+
+    <div>
+      {% for skill in skills %}
+        <span class="mr-3">{{ skill }}</span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="interests" class="mb-5">
+    <h2 class="py-2 text-gray-600 text-lg uppercase font-normal font-sans">Interests</h2>
+
+    <div>
+      {% for interest in interests %}
+        <span class="mr-3">{{ interest }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+{
+    "info": {
+        "name": "Dezmerean Robert",
+        "headline": "Software Developer",
+        "email": "dezmereanrobert@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/robert-dezmerean/",
+        "github": "https://www.github.com/robert-96/"
+    },
+    "education": [
+        {
+            "name": "Universitatea „Babeș-Bolyai” Facultatea de Matematică şi Informatică",
+            "degree": "Bachelor in Computer Science, Computer Science",
+            "date": "Oct. 2015 - July. 2018",
+            "location": "Cluj-Napoca, RO"
+        },
+        {
+            "name": "Colegiul Tehnic „Alesandru Papiu Ilarian” Zalău",
+            "degree": "High School Diploma, Mathematics and Computer Science",
+            "date": "Sep. 2011 – May. 2015",
+            "location": "Zalău, RO"
+        }
+    ],
+    "experience": [
+        {
+            "name": "Altom Consulting",
+            "date": "July. 2017 - Present",
+            "title": "Software Developer",
+            "location": "Cluj-Napoca, RO",
+            "subsections": [
+                {
+                    "description": "Designed and implemented AltWalker: an open source Model-Based Testing framework that supports running tests written in python3 and .NET/C#."
+                },
+                {
+                    "description": "Efficiently deployed and integrated multiple CI/CD pipelines (Jenkins, GitLab CI/CD and GitHub CI/CD) to improve the development process."
+                },
+                {
+                    "description": "Helped to organize and supervise an online workshop on Model-Based Testing, helping the participants to go through the practical exercises."
+                },
+                {
+                    "description": "Build RESFul APIs (using Flask) that serves data to our front-end application that enabled out team to visualize test reports."
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "junit-reporter",
+            "url": "https://github.com/Robert-96/junit-reporter",
+            "description": "A Python3 package that generates test results in the standard JUnit XML format for use with Jenkins and other build integration servers."
+        },
+        {
+            "name": "rost",
+            "url": "https://github.com/Robert-96/rost",
+            "description": "A simple static site generator based on Jinja2 with a CLI build using Click."
+        },
+        {
+            "name": "tox-docker",
+            "url": "https://github.com/Robert-96/tox-docker",
+            "description": "Docker image for running tox with Python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, PyPy and PyPy3."
+        }
+    ],
+    "skills": [
+        "Test Driven Development (TDD)",
+        "Continuous Integration and Continuous Delivery (CI/CD)",
+        "Object-Oriented Programming (OOP)",
+        "Agile Frameworks",
+        "Unit Testing",
+        "Debugging",
+        "Python",
+        "Flask",
+        "Docker",
+        "JavaScript",
+        "Node.js",
+        "Ember.js",
+        "Vue.js",
+        "Express.js",
+        ".NET",
+        "MongoDB",
+        "SQL",
+        "Git",
+        "Bash / Shell"
+    ],
+    "interests": [
+        "Drawing",
+        "Graphic Design",
+        "Affinity Designer",
+        "Inkscape"
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "Professional working proficiency."
+        },
+        {
+            "name": "Romanian",
+            "level": "Native."
+        }
+
+    ]
+}
