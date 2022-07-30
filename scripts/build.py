@@ -12,6 +12,7 @@ def build(debug=False):
     generator = Rost(
         searchpath="templates",
         outputpath="dist",
+        staticpaths=["CNAME"],
         contexts=[
             ('.', get_context)
         ],
