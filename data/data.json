@@ -29,7 +29,7 @@
     "education": [
         {
             "name": "Babeş-Bolyai University, Faculty of Mathematics and Computer Science",
-            "degree": "Bachelor in Computer Science, Computer Science",
+            "degree": "Bachelor in Computer Science",
             "date": "Oct. 2015 - July. 2018",
             "location": "Cluj-Napoca, RO"
         }
@@ -37,7 +37,7 @@
     "experience": [
         {
             "name": "Altom Consulting",
-            "date": "July. 2017 - Present",
+            "date": "Oct. 2017 - Present",
             "title": "Software Developer",
             "location": "Cluj-Napoca, RO",
             "subsections": [
@@ -54,6 +54,23 @@
                     "description": "Build RESFul APIs (using Flask) and web application (using Ember.js) that enabled out team to visualize test reports."
                 }
             ]
+        },
+        {
+            "name": "Altom Consulting",
+            "date": "Jul. 2017 - Sep. 2017",
+            "title": "Software Developer Intern",
+            "location": "Cluj-Napoca, RO",
+            "subsections": [
+                {
+                    "description": "Implemented enhancements and bug fixes as part of an agile development team."
+                },
+                {
+                    "description": "Took part in peer programming sessions, code reviews, stand ups and meetings."
+                },
+                {
+                    "description": "Working closely with other developers to improve my programming skills."
+                }
+            ]
         }
     ],
     "projects": [
@@ -61,6 +78,11 @@
             "name": "junit-reporter",
             "url": "https://github.com/Robert-96/junit-reporter",
             "description": "A Python3 package that generates test results in the standard JUnit XML format for use with Jenkins and other build integration servers."
+        },
+        {
+            "name": "Model-Editor",
+            "url": "https://altom.gitlab.io/altwalker/model-editor",
+            "description": "A web based editor and visualizer for models written using the GraphWalker JSON format."
         },
         {
             "name": "rost",
