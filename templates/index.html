@@ -24,7 +24,7 @@
         <ul class="list-inside text-sm mt-3">
           {% for item in social %}
             <li>
-              <span class="inline-block font-normal text-gray-500 w-16">{{ item.name }}:</span> <a class="text-blue-500 hover:text-blue-400 font-mono" href="{{ item.link }}">{{ item.display }}</a>
+              <span class="inline-block font-normal text-gray-500 w-16">{{ item.name }}:</span> <a class="text-blue-500 hover:text-blue-400 font-mono" href="{{ item.url }}" target="_blank">{{ item.display }}</a>
             </li>
           {% endfor %}
         </ul>
