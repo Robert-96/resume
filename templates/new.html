@@ -19,14 +19,22 @@
       </header>
 
       <div id="main" class="md:columns-2 print:columns-2">
+        <section id="about" class="break-inside-avoid">
+          <header>
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 print:font-normal">About Me</h2>
+          </header>
+
+          <p class="mb-3">{{ summary }}</p>
+        </section>
+
         <section id="experience" class="break-inside-avoid">
           <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 print:font-normal">Experience</h2>
 
           {% for workplace in experience %}
             <section class="mb-5">
               <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snug">{{ workplace.title }} | {{ workplace.name }}</h3>
-                <p class="text-md text-gray-600 leading-normal">{{ workplace.location }} | {{ workplace.date }}</p>
+                <h3 class="text-lg font-semibold text-gray-700 leading-snug">{{ workplace.title }} · {{ workplace.name }}</h3>
+                <p class="text-md text-gray-600 leading-normal">{{ workplace.location }} · {{ workplace.date }}</p>
               </header>
 
               <ul>
@@ -49,27 +57,83 @@
             <section class="mb-5">
               <header>
                 <h3 class="text-lg font-semibold text-gray-700 leading-snug">{{ school.name }}</h3>
-                <p class="text-md text-gray-600 leading-normal">{{ school.date }} | {{ school.degree }}</p>
+                <p class="text-md text-gray-600 leading-normal">{{ school.date }} · {{ school.degree }}</p>
               </header>
-
             </section>
           {% endfor %}
         </section>
 
         <section id="projects" class="break-inside-avoid">
-          <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 print:font-normal">Projects</h2>
+          <header>
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 print:font-normal">Projects</h2>
+          </header>
 
           {% for project in projects %}
             <section class="mb-5">
               <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snug">{{ project.name }}</h3>
-                <p class="text-md text-gray-600 leading-normal">{{ project.description }}</p>
+                <h3 class="text-lg font-semibold text-gray-700 leading-snug">
+                  <a href="{{ project.url }}" class="group">
+                    {{ project.name }}
+                    <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                  </a>
+                </h3>
               </header>
 
+              <p class="text-md text-gray-600 leading-normal">{{ project.description }}</p>
             </section>
           {% endfor %}
         </section>
 
+        <section id="skills" class="break-inside-avoid">
+          <header>
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 print:font-normal">Skills</h2>
+          </header>
+
+          <div class="my-3 last:pb-2">
+            <ul class="flex flex-wrap text-md leading-relaxed -mr-2 -mb-2">
+              {% for skill in skills %}
+                <li class="px-2 mr-2 mb-2 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                  {{ skill }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+
+        <section id="interests" class="break-inside-avoid">
+          <header>
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 print:font-normal">Interests</h2>
+          </header>
+
+          <div class="my-3 last:pb-2">
+            <ul class="flex flex-wrap text-md leading-relaxed -mr-2 -mb-2">
+              {% for interest in interests %}
+                <li class="px-2 mr-2 mb-2 text-base text-gray-700 print:bg-white print:border-inset bg-gray-200">
+                  {{ interest }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+
+        <section id="contact" class="break-inside-avoid">
+          <header>
+            <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 print:font-normal">Contact</h2>
+          </header>
+
+          <ul class="list-inside pr-7">
+            {% for item in social %}
+            <li class="mt-1 leading-normal text-gray-700 text-md">
+              {{ item.name }}:
+
+              <a href="{{ item.url }}" target="_blank" class="group">
+                {{ item.display }}
+                <span class="inline-block text-gray-500 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
       </div>
     </div>
   </main>

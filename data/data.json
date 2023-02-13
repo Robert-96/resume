@@ -4,26 +4,32 @@
         "headline": "Software Developer",
         "location": "Cluj-Napoca, Romania"
     },
+    "summary": "I'm a software developer based in Cluj-Napoca, and I've been on GitHub since 2014. I'm a big fan of open source, and my work focuses on developing tools that help developers and testers be more productive.",
     "social": [
         {
             "name": "Email",
-            "link": "mailto:dezmereanrobert@gmail.com",
+            "url": "mailto:dezmereanrobert@gmail.com",
             "display": "dezmereanrobert@gmail.com"
         },
         {
             "name": "Website",
-            "link": "https://www.dezmereanrobert.com",
+            "url": "https://www.dezmereanrobert.com",
             "display": "www.dezmereanrobert.com"
         },
         {
             "name": "LinkedIn",
-            "link": "https://www.linkedin.com/in/robert-dezmerean/",
+            "url": "https://www.urledin.com/in/robert-dezmerean/",
             "display": "@robert-dezmerean"
         },
         {
             "name": "GitHub",
-            "link": "https://www.github.com/robert-96/",
+            "url": "https://www.github.com/robert-96/",
             "display": "@robert-96"
+        },
+        {
+            "name": "Twitter",
+            "url": "https://twitter.com/dezmereanrobert",
+            "display": "@dezmereanrobert"
         }
     ],
     "education": [
