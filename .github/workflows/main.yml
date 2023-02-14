@@ -1,9 +1,6 @@
 name: Main
 
-on:
-  push:
-    branches:
-      - main
+on: ['push']
 
 jobs:
   lint:
@@ -48,6 +45,32 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: "dist/"
+
+  lighthouse:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Install Lighthouse
+        run: |
+          npm install -g @lhci/cli@0.8.x
+
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: 'dist/'
+
+      - name: Run Lighthouse
+        run: |
+          lhci autorun
 
   deploy:
     needs: build
