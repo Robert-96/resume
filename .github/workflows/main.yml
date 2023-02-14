@@ -42,9 +42,15 @@ jobs:
           python -m scripts
 
       - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: 'dist/'
+
+      - name: Upload page artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "dist/"
+          path: 'dist/'
 
   lighthouse:
     needs: build
