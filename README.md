@@ -1,6 +1,6 @@
 # resume
 
-My resume.
+My resume: https://resume.dezmereanrobert.com.
 
 ![Screenshot](/screenshots/screenshot.png)
 
