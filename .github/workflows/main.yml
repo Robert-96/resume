@@ -51,6 +51,10 @@ jobs:
         run: |
           npm run build-prod
 
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: --output=dist/resume.pdf dist/index.html
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
