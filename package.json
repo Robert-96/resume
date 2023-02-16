@@ -1,0 +1,30 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "author": "",
+  "description": "My resume: https://resume.dezmereanrobert.com.",
+  "scripts": {
+    "rost-build": "python -m scripts",
+    "rost-watch": "python scripts/build.py",
+    "tailwind-build": "npx tailwindcss -i ./dist/css/input.css -o ./templates/css/tailwind.css",
+    "tailwind-watch": "npx tailwindcss -i ./dist/css/input.css -o ./templates/css/tailwind.css --watch",
+    "tailwind-prod": "npx tailwindcss -i ./dist/css/input.css -o ./templates/css/tailwind.css --minify",
+    "build": "npm-run-all rost-build tailwind-build",
+    "build-prod": "npm-run-all rost-build tailwind-prod",
+    "dev": "npm-run-all rost-watch tailwind-watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robert-96/resume.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Robert-96/resume/issues"
+  },
+  "homepage": "https://github.com/Robert-96/resume#readme",
+  "devDependencies": {
+    "@lhci/cli": "^0.6.1",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.7"
+  }
+}
