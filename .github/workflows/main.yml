@@ -51,10 +51,6 @@ jobs:
         run: |
           npm run build-prod
 
-      - uses: docker://pandoc/core:2.9
-        with:
-          args: --output=dist/resume.pdf dist/index.html --pdf-engine=pagedjs-cli
-
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
