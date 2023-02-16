@@ -2,7 +2,7 @@
 
 This project is a resume website that showcases my professional experience, education, and skills. The website is built using Python and Node.js.
 
-My resume can be viewed at https://resume.dezmereanrobert.com.
+You can view my resume at https://resume.dezmereanrobert.com, or you can download a PDF version at https://resume.dezmereanrobert.com/pdf/Dezmerean%20Robert%20-%20Resume.pdf.
 
 ![Screenshot](/screenshots/screenshot.png)
 
@@ -62,3 +62,19 @@ $ # TODO
 ### Deploy
 
 See the deploy job from [main.yml](.github/workflows/main.yml).
+
+## Save as PDF
+
+### Chrome
+
+1. Right-click on the page and select "Print."
+1. In the print options, choose "Save as PDF."
+1. To set the page size to A4 or Letter, navigate to "More Settings → Paper Size".
+1. Click "Save".
+
+### Firefox
+
+1. Click on "File" and select "Print".
+1. In the print options, choose "Save as PDF."
+1. To set the page size to A4 or Letter, navigate to "More Settings → Paper Size".
+1. Click "Save".
