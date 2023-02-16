@@ -51,7 +51,7 @@ jobs:
         run: |
           npm run build-prod
 
-      - uses: docker://pandoc/latex:2.9
+      - uses: docker://pandoc/core:2.9
         with:
           args: --output=dist/resume.pdf dist/index.html --pdf-engine=weasyprint
 
