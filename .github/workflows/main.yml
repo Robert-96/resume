@@ -53,7 +53,7 @@ jobs:
 
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --output=dist/resume.pdf dist/index.html
+          args: --output=dist/resume.pdf dist/index.html --pdf-engine=xelatex
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
