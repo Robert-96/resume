@@ -4,7 +4,7 @@
         "headline": "Software Developer",
         "location": "Cluj-Napoca, Romania"
     },
-    "summary": "I'm a software developer based in Cluj-Napoca, and I've been on GitHub since 2014. I'm a big fan of open source, and my work focuses on developing tools that help developers and testers be more productive.",
+    "summary": "I am a problem solver at heart and a software developer by profession. With a strong background in Python and JavaScript, I specialize in building high-performance, scalable, and secure applications using modern web frameworks such as Flask and Django. I am passionate about staying up-to-date with the latest developments in the software industry and exploring new technologies to solve complex problems. In my free time, I enjoy contributing to open-source projects and sharing my knowledge with the developer community.",
     "social": [
         {
             "name": "Email",
@@ -48,16 +48,16 @@
             "location": "Cluj-Napoca, RO",
             "subsections": [
                 {
-                    "description": "Designed, implemented and maintained AltWalker: an open source Model-Based Testing framework that supports running tests written in python3 and .NET/C#."
+                    "description": "I designed, implemented, and maintained AltWalker, an open-source Model-Based Testing framework that supports running tests written in Python 3 and .NET/C#."
                 },
                 {
-                    "description": "Efficiently deployed and integrated multiple CI/CD pipelines (Jenkins, GitLab CI/CD and GitHub CI/CD) to improve the code quality and increase productivity."
+                    "description": "Efficiently deployed and integrated multiple CI/CD pipelines (Jenkins, GitLab CI/CD, and GitHub CI/CD) to improve code quality and increase productivity."
                 },
                 {
-                    "description": "Helped to organize and supervise an online workshop on Model-Based Testing, helping the participants to go through the practical exercises."
+                    "description": "I helped to organize and supervise an online workshop on Model-Based Testing, guiding the participants through the practical exercises."
                 },
                 {
-                    "description": "Build RESFul APIs (using Flask) and web application (using Ember.js) that enabled out team to visualize test reports."
+                    "description": "Build RESTful APIs (using Flask) and web applications (using Ember.js) that enable our team to visualize test reports."
                 }
             ]
         },
@@ -68,10 +68,10 @@
             "location": "Cluj-Napoca, RO",
             "subsections": [
                 {
-                    "description": "Implemented enhancements and bug fixes as part of an agile development team."
+                    "description": "I implemented enhancements and bug fixes as part of an agile development team."
                 },
                 {
-                    "description": "Took part in peer programming sessions, code reviews, stand ups and meetings."
+                    "description": "I participated in peer programming sessions, code reviews, stand-up meetings, and other meetings."
                 },
                 {
                     "description": "Working closely with other developers to improve my programming skills."
