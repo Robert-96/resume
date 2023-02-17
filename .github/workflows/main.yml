@@ -76,7 +76,7 @@ jobs:
 
       - name: Install Lighthouse
         run: |
-          npm install -g @lhci/cli@0.8.x
+          npm install -g @lhci/cli
 
       - name: Download artifact
         uses: actions/download-artifact@v3
