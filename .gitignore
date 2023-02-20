@@ -236,3 +236,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+# CUSTOM
+
+# Tailwind CSS build
+templates/css/tailwind.css
