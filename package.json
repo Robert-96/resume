@@ -6,12 +6,12 @@
   "scripts": {
     "rost-build": "python -m scripts",
     "rost-watch": "python scripts/build.py",
-    "tailwind-build": "npx tailwindcss -i ./templates/css/input.css -o ./dist/css/tailwind.css",
-    "tailwind-watch": "npx tailwindcss -i ./templates/css/input.css -o ./dist/css/tailwind.css --watch",
-    "tailwind-prod": "npx tailwindcss -i ./templates/css/input.css -o ./dist/css/tailwind.css --minify",
+    "tailwind-build": "npx tailwindcss -i ./templates/css/input.css -o ./templates/css/tailwind.css",
+    "tailwind-watch": "npx tailwindcss -i ./templates/css/input.css -o ./templates/css/tailwind.css --watch",
+    "tailwind-prod": "npx tailwindcss -i ./templates/css/input.css -o ./templates/css/tailwind.css --minify",
     "build": "npm-run-all rost-build tailwind-build",
     "build-prod": "npm-run-all rost-build tailwind-prod",
-    "dev": "npm-run-all rost-watch tailwind-watch",
+    "dev": "npm-run-all tailwind-build --parallel tailwind-watch rost-watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
