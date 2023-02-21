@@ -2,8 +2,10 @@
     "info": {
         "name": "Dezmerean Robert",
         "headline": "Software Developer",
-        "location": "Cluj-Napoca, Romania"
+        "location": "Cluj-Napoca, Romania",
+        "twitter": "@dezmereanrobert"
     },
+    "url": "http://resume.dezmereanrobert.com/",
     "summary": "I am a problem solver at heart and a software developer by profession. With a strong background in Python and JavaScript, I specialize in building high-performance, scalable, and secure applications using modern web frameworks such as Flask and Django. I am passionate about staying up-to-date with the latest developments in the software industry and exploring new technologies to solve complex problems. In my free time, I enjoy contributing to open-source projects and sharing my knowledge with the developer community.",
     "social": [
         {
