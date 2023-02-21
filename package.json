@@ -9,8 +9,8 @@
     "tailwind-build": "npx tailwindcss -i ./templates/css/input.css -o ./templates/css/tailwind.css",
     "tailwind-watch": "npx tailwindcss -i ./templates/css/input.css -o ./templates/css/tailwind.css --watch",
     "tailwind-prod": "npx tailwindcss -i ./templates/css/input.css -o ./templates/css/tailwind.css --minify",
-    "build": "npm-run-all rost-build tailwind-build",
-    "build-prod": "npm-run-all rost-build tailwind-prod",
+    "build": "npm-run-all tailwind-build rost-build",
+    "build-prod": "npm-run-all tailwind-prod rost-build",
     "dev": "npm-run-all tailwind-build --parallel tailwind-watch rost-watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
