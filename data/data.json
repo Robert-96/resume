@@ -89,7 +89,7 @@
         },
         {
             "name": "Model-Editor",
-            "url": "https://altom.gitlab.io/altwalker/model-editor",
+            "url": "https://altwalker.github.io/model-editor",
             "description": "A web based editor and visualizer for models written using the GraphWalker JSON format."
         },
         {
