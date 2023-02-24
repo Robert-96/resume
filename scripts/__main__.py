@@ -1,3 +1,3 @@
-from .build import build
+from .cli import cli
 
-build()
+cli()
