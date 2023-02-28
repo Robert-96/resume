@@ -1,8 +1,8 @@
 # resume
 
-This project is a resume website that showcases my professional experience, education, and skills. The website is built using Python and Node.js.
+This project is a resume site that showcases my professional experience, education, and skills. The site is built using Python and Node.js.
 
-You can view my resume at https://resume.dezmereanrobert.com, or you can download a PDF version at https://resume.dezmereanrobert.com/pdf/Dezmerean%20Robert%20-%20Resume.pdf.
+You can view my resume at <https://resume.dezmereanrobert.com>, or you can download a PDF version <https://resume.dezmereanrobert.com/pdf/Dezmerean%20Robert%20-%20Resume.pdf>.
 
 ![Screenshot](/screenshots/screenshot.png)
 
@@ -22,13 +22,13 @@ Before you get started, you'll need to have the following installed:
 To install the Python dependencies, run the following command:
 
 ```bash
-$ python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 To install the Node.js dependencies, run the following command:
 
 ```bash
-$ npm install
+npm install
 ```
 
 ### Dev
@@ -36,17 +36,17 @@ $ npm install
 To start a development server, run the following command:
 
 ```bash
-$ npm run dev
+npm run dev
 ```
 
-Navigate to the site at http://localhost:8080/.
+Navigate to the site at <http://localhost:8080/>.
 
 ### Build
 
 To build the project, run the following command:
 
 ```bash
-$ npm run build
+npm run build
 ```
 
 The output will be in the `./dist/` directory.
@@ -56,7 +56,7 @@ The output will be in the `./dist/` directory.
 To run tests, run the following command:
 
 ```bash
-$ # TODO
+# TODO
 ```
 
 ### Deploy

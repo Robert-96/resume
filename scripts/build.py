@@ -15,7 +15,7 @@ def build(debug=False):
         staticpaths=["CNAME", "js", "css", "fonts", "pdf", "img"],
         contexts=[
             ('.', get_context)
-        ],
+        ]
     )
 
     if debug:

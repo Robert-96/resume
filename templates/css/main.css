@@ -1,17 +1,17 @@
 @font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
-    font-family: Hind;
-    src: url(../fonts/Hind-Light.ttf);
+  font-family: Hind;
+  src: url("../fonts/Hind-Light.ttf");
 }
 
 .montserrat {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hind {
-    font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
 }

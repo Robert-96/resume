@@ -6,7 +6,7 @@ module.exports = {
       numberOfRuns: 5
     },
     upload: {
-      target: 'temporary-public-storage',
-    },
-  },
-};
+      target: 'temporary-public-storage'
+    }
+  }
+}
