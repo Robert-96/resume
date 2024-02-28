@@ -1,5 +1,6 @@
 import json
 
+import markdown2
 from rost import Rost
 
 
@@ -13,6 +14,9 @@ def build(debug=False):
         searchpath="templates",
         outputpath="dist",
         staticpaths=["CNAME", "js", "css", "fonts", "pdf", "img"],
+        filters={
+            "markdown": lambda x: markdown2.markdown(x)
+        },
         contexts=[(".", get_context)],
     )
 
