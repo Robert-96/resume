@@ -1,144 +1,143 @@
 {
-    "info": {
-        "name": "Dezmerean Robert",
-        "headline": "Software Developer",
-        "location": "Cluj-Napoca, Romania",
-        "twitter": "@dezmereanrobert"
+  "info": {
+    "name": "Dezmerean Robert",
+    "headline": "Software Developer",
+    "location": "Cluj-Napoca, Romania",
+    "twitter": "@dezmereanrobert"
+  },
+  "url": "http://resume.dezmereanrobert.com/",
+  "summary": "I'm a **Software Developer** with **6 years of experience**. With a strong background in **Python** and **JavaScript**, I specialise in building high-performance, scalable, and secure applications using modern web frameworks such as **Flask** and **FAST API**.",
+  "social": [
+    {
+      "name": "Email",
+      "url": "mailto:dezmereanrobert@gmail.com",
+      "display": "dezmereanrobert@gmail.com"
     },
-    "url": "http://resume.dezmereanrobert.com/",
-    "summary": "I am a problem solver at heart and a software developer by profession. With a strong background in Python and JavaScript, I specialize in building high-performance, scalable, and secure applications using modern web frameworks such as Flask and Django. I am passionate about staying up-to-date with the latest developments in the software industry and exploring new technologies to solve complex problems. In my free time, I enjoy contributing to open-source projects and sharing my knowledge with the developer community.",
-    "social": [
+    {
+      "name": "Website",
+      "url": "https://www.dezmereanrobert.com",
+      "display": "www.dezmereanrobert.com"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.urledin.com/in/robert-dezmerean/",
+      "display": "@robert-dezmerean"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://www.github.com/robert-96/",
+      "display": "@robert-96"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/dezmereanrobert",
+      "display": "@dezmereanrobert"
+    }
+  ],
+  "education": [
+    {
+      "name": "Babeş-Bolyai University, Faculty of Mathematics and Computer Science",
+      "degree": "Bachelor in Computer Science",
+      "date": "Oct. 2015 - July. 2018",
+      "location": "Cluj-Napoca, RO"
+    }
+  ],
+  "experience": [
+    {
+      "name": "Altom Consulting",
+      "date": "Oct. 2017 - Present",
+      "title": "Software Developer",
+      "location": "Cluj-Napoca, RO",
+      "subsections": [
         {
-            "name": "Email",
-            "url": "mailto:dezmereanrobert@gmail.com",
-            "display": "dezmereanrobert@gmail.com"
+          "description": "I designed, implemented, and maintained AltWalker, an **open-source** **Model-Based Testing framework** that supports running tests written in **Python 3** and **.NET/C#**."
         },
         {
-            "name": "Website",
-            "url": "https://www.dezmereanrobert.com",
-            "display": "www.dezmereanrobert.com"
+          "description": "Efficiently deployed and integrated multiple **CI/CD** pipelines (**Jenkins**, **GitLab CI/CD**, and **GitHub Actions**) to improve code quality and increase productivity."
         },
         {
-            "name": "LinkedIn",
-            "url": "https://www.urledin.com/in/robert-dezmerean/",
-            "display": "@robert-dezmerean"
+          "description": "I helped to organize and supervise an online workshop on **Model-Based Testing**, guiding the participants through the practical exercises."
         },
         {
-            "name": "GitHub",
-            "url": "https://www.github.com/robert-96/",
-            "display": "@robert-96"
+          "description": "Build **RESTful APIs** (using **Flask**) and web applications (using **Ember.js**) that enable our team to visualize test reports."
         },
         {
-            "name": "Twitter",
-            "url": "https://twitter.com/dezmereanrobert",
-            "display": "@dezmereanrobert"
+          "description": " I took charge of implementing **WebGL** support and integrating cloud platforms such as **BrowserStack** and **BitBar** into our test automation tools for **Unity** apps and games."
         }
-    ],
-    "education": [
+      ]
+    },
+    {
+      "name": "Altom Consulting",
+      "date": "Jul. 2017 - Sep. 2017",
+      "title": "Software Developer Intern",
+      "location": "Cluj-Napoca, RO",
+      "subsections": [
         {
-            "name": "Babeş-Bolyai University, Faculty of Mathematics and Computer Science",
-            "degree": "Bachelor in Computer Science",
-            "date": "Oct. 2015 - July. 2018",
-            "location": "Cluj-Napoca, RO"
+          "description": "I implemented enhancements and bug fixes as part of an **agile development team**."
+        },
+        {
+          "description": "I participated in peer programming sessions, **code reviews**, **stand-up meetings**, and other meetings."
+        },
+        {
+          "description": "Working closely with other developers to **improve my programming skills**."
         }
-    ],
-    "experience": [
-        {
-            "name": "Altom Consulting",
-            "date": "Oct. 2017 - Present",
-            "title": "Software Developer",
-            "location": "Cluj-Napoca, RO",
-            "subsections": [
-                {
-                    "description": "I designed, implemented, and maintained AltWalker, an open-source Model-Based Testing framework that supports running tests written in Python 3 and .NET/C#."
-                },
-                {
-                    "description": "Efficiently deployed and integrated multiple CI/CD pipelines (Jenkins, GitLab CI/CD, and GitHub CI/CD) to improve code quality and increase productivity."
-                },
-                {
-                    "description": "I helped to organize and supervise an online workshop on Model-Based Testing, guiding the participants through the practical exercises."
-                },
-                {
-                    "description": "Build RESTful APIs (using Flask) and web applications (using Ember.js) that enable our team to visualize test reports."
-                }
-            ]
-        },
-        {
-            "name": "Altom Consulting",
-            "date": "Jul. 2017 - Sep. 2017",
-            "title": "Software Developer Intern",
-            "location": "Cluj-Napoca, RO",
-            "subsections": [
-                {
-                    "description": "I implemented enhancements and bug fixes as part of an agile development team."
-                },
-                {
-                    "description": "I participated in peer programming sessions, code reviews, stand-up meetings, and other meetings."
-                },
-                {
-                    "description": "Working closely with other developers to improve my programming skills."
-                }
-            ]
-        }
-    ],
-    "projects": [
-        {
-            "name": "junit-reporter",
-            "url": "https://github.com/Robert-96/junit-reporter",
-            "description": "A Python3 package that generates test results in the standard JUnit XML format for use with Jenkins and other build integration servers."
-        },
-        {
-            "name": "Model-Editor",
-            "url": "https://altwalker.github.io/model-editor",
-            "description": "A web based editor and visualizer for models written using the GraphWalker JSON format."
-        },
-        {
-            "name": "rost",
-            "url": "https://github.com/Robert-96/rost",
-            "description": "A simple static site generator based on Jinja2 with a CLI build using Click."
-        },
-        {
-            "name": "tox-docker",
-            "url": "https://github.com/Robert-96/tox-docker",
-            "description": "Docker image for running tox with Python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, PyPy and PyPy3."
-        }
-    ],
-    "skills": [
-        "Test Driven Development (TDD)",
-        "Continuous Integration and Continuous Delivery (CI/CD)",
-        "Object-Oriented Programming (OOP)",
-        "Agile Frameworks",
-        "Unit Testing",
-        "Debugging",
-        "Python",
-        "Flask",
-        "Docker",
-        "JavaScript",
-        "Node.js",
-        "Ember.js",
-        "Vue.js",
-        "Express.js",
-        ".NET",
-        "MongoDB",
-        "SQL",
-        "Git",
-        "Bash / Shell"
-    ],
-    "interests": [
-        "Drawing",
-        "Graphic Design",
-        "Affinity Designer",
-        "Inkscape"
-    ],
-    "languages": [
-        {
-            "name": "English",
-            "level": "Professional working proficiency."
-        },
-        {
-            "name": "Romanian",
-            "level": "Native."
-        }
-
-    ]
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "junit-reporter",
+      "url": "https://github.com/Robert-96/junit-reporter",
+      "description": "A Python3 package that generates test results in the standard **JUnit XML** format for use with **Jenkins** and other build integration servers."
+    },
+    {
+      "name": "live-viewer",
+      "url": "https://github.com/altwalker/live-viewer",
+      "description": "A **web application** for visualizing the progress of an AltWalker test run build using **WebSockets**."
+    },
+    {
+      "name": "tox-docker",
+      "url": "https://github.com/Robert-96/tox-docker",
+      "description": "**Docker** image for running **tox** with Python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, PyPy and PyPy3."
+    }
+  ],
+  "skills": [
+    "TDD",
+    "CI/CD",
+    "OOP",
+    "Agile Frameworks",
+    "Unit Testing",
+    "Debugging",
+    "Python",
+    "WebSockets",
+    "Flask",
+    "FAST API",
+    "Docker",
+    "JavaScript",
+    "Node.js",
+    "Ember.js",
+    "Vue.js",
+    "Express.js",
+    ".NET",
+    "MongoDB",
+    "SQL",
+    "Git",
+    "Bash / Shell"
+  ],
+  "interests": [
+    "Drawing",
+    "Graphic Design",
+    "Affinity Designer",
+    "Inkscape"
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Professional working proficiency."
+    },
+    {
+      "name": "Romanian",
+      "level": "Native."
+    }
+  ]
 }
