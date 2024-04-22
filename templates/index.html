@@ -34,7 +34,7 @@
   <!-- Custom JS -->
   <script src="js/dark.js"></script>
 </head>
-<body class="bg-white dark:bg-slate-800 text-black dark:text-white ">
+<body class="bg-white dark:bg-slate-900 text-black dark:text-white">
   <main class="hind text-base font-light leading-normal tracking-normal">
     <div class="w-full h-3 bg-gradient-to-r from-lime-500 via-green-500 via-emerald-500 to-teal-500 print:hidden"></div>
 
@@ -51,7 +51,9 @@
             <h2 class="mb-4 montserrat font-bold uppercase tracking-widest text-sm2 text-gray-500 dark:text-white print:font-normal">About Me</h2>
           </header>
 
-          <p class="mb-3 text-gray-700 dark:text-gray-300">{{ summary }}</p>
+          <div class="mb-3 prose prose-slate dark:prose-invert text-gray-700 dark:text-gray-300">
+            {{ summary | markdown }}
+          </div>
         </section>
 
         <section id="experience" class="break-inside-avoid">
@@ -69,7 +71,7 @@
                 <li class="mt-2 text-md text-gray-700 dark:text-gray-300 leading-normal">
                   <span class="absolute -ml-3 sm:-ml-3 select-none transform -translate-y-px">›</span>
 
-                  <span>{{ subsection.description }}</span>
+                  <span class="prose prose-slate dark:prose-invert">{{ subsection.description | markdown }}</span>
                 </li>
                 {% endfor %}
               </ul>
@@ -106,7 +108,9 @@
                 </h3>
               </header>
 
-              <p class="text-md text-gray-700 dark:text-gray-300 leading-normal">{{ project.description }}</p>
+              <div class="prose prose-slate dark:prose-invert">
+                {{ project.description | markdown }}
+              </div>
             </section>
           {% endfor %}
         </section>
