@@ -2,6 +2,9 @@ name: Main
 
 on: ['push']
 
+env:
+  NODE_VERSION: '18.x'
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -16,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install flake8
-          
+
       - name: Lint with flake8
         run: |
           flake8 .
@@ -38,10 +41,10 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Setup Node.js
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v4
         with:
-          node-version: 16.x
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install npm dependencies
         run: |
@@ -69,10 +72,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js 16.x
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install Lighthouse
         run: |
@@ -87,7 +90,7 @@ jobs:
       - name: Run Lighthouse
         run: |
           lhci autorun
-        env: 
+        env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_TOKEN }}
 
   deploy:
