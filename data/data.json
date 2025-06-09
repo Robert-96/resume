@@ -6,7 +6,7 @@
     "twitter": "@dezmereanrobert"
   },
   "url": "http://resume.dezmereanrobert.com/",
-  "summary": "I'm a **Software Developer** with **6 years of experience**. With a strong background in **Python** and **JavaScript**, I specialise in building high-performance, scalable, and secure applications using modern web frameworks such as **Flask** and **FAST API**.",
+  "summary": "I'm a **Software Developer** with **6 years of experience**. With a strong background in **Python**, **JavaScript** and **.NET**, I specialise in building high-performance, scalable, and secure applications using modern web frameworks such as **Flask** and **FAST API**.",
   "social": [
     {
       "name": "Email",
@@ -44,8 +44,25 @@
   ],
   "experience": [
     {
+      "name": "Microsoft",
+      "date": "August 2024 - Present",
+      "title": "Software Engineer",
+      "location": "Remote",
+      "subsections": [
+        {
+          "description": "Develop, maintain, and enhance dashboards that provide comprehensive visibility into Azure sovereign cloud buildout progress and resource deployment status."
+        },
+        {
+          "description": "Building internal tools that enhance automation capabilities and standardize deployment processes."
+        },
+        {
+          "description": "Analyze deployment data and generate comprehensive reports, enabling strategic decisions that increase automation maturity and advance infrastructure-as-code adoption across Azure Core."
+        }
+      ]
+    },
+    {
       "name": "Altom Consulting",
-      "date": "Oct. 2017 - Present",
+      "date": "Oct. 2017 - Apr. 2024",
       "title": "Software Developer",
       "location": "Cluj-Napoca, RO",
       "subsections": [
