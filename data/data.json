@@ -38,7 +38,7 @@
     {
       "name": "Babeş-Bolyai University, Faculty of Mathematics and Computer Science",
       "degree": "Bachelor in Computer Science",
-      "date": "Oct. 2015 - July. 2018",
+      "date": "Oct. 2015 - Jul. 2018",
       "location": "Cluj-Napoca, RO"
     }
   ],
@@ -50,13 +50,13 @@
       "location": "Remote",
       "subsections": [
         {
-          "description": "Develop, maintain, and enhance dashboards that provide comprehensive visibility into Azure sovereign cloud buildout progress and resource deployment status."
+          "description": "Develop, maintain, and enhance dashboards using **Azure Data Explorer** and **KQL** that provide comprehensive visibility into Azure sovereign cloud buildout progress and resource deployment status."
         },
         {
-          "description": "Building internal tools that enhance automation capabilities and standardize deployment processes."
+          "description": "Building internal tools that **enhance automation** capabilities, eliminating manual processes, and reducing human error."
         },
         {
-          "description": "Analyze deployment data and generate comprehensive reports, enabling strategic decisions that increase automation maturity and advance infrastructure-as-code adoption across Azure Core."
+          "description": "Analyze deployment data using **pandas** and **numpy** to generate comprehensive reports, enabling strategic decisions that increase automation maturity and advance **infrastructure-as-code** adoption across **Azure Core**."
         }
       ]
     },
