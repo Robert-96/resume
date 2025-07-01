@@ -241,3 +241,6 @@ dist
 
 # Tailwind CSS build
 templates/css/tailwind.css
+
+# Overwrite file
+data/overwrites.json
