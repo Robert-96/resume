@@ -6,7 +6,7 @@
     "twitter": "@dezmereanrobert"
   },
   "url": "http://resume.dezmereanrobert.com/",
-  "summary": "I'm a **Software Developer** with **6 years of experience**. With a strong background in **Python**, **JavaScript** and **.NET**, I specialise in building high-performance, scalable, and secure applications using modern web frameworks such as **Flask** and **FAST API**.",
+  "summary": "Innovative **Software Developer with 7 years of experience** transforming complex technical challenges into streamlined, scalable solutions. Currently developing **Azure** cloud infrastructure tools at **Microsoft** while maintaining active contributions to the open-source community. Expertise spans **Python**, **JavaScript**, **.NET**, and modern web frameworks, with a proven ability to bridge technical implementation and business objectives.",
   "social": [
     {
       "name": "Email",
@@ -76,7 +76,7 @@
           "description": "I helped to organize and supervise an online workshop on **Model-Based Testing**, guiding the participants through the practical exercises."
         },
         {
-          "description": "Build **RESTful APIs** (using **Flask**) and web applications (using **Ember.js**) that enable our team to visualize test reports."
+          "description": "Build **RESTful APIs** (using **Flask** and **MongoDB**) and web applications (using **Ember.js**) that enable our team to visualize test reports."
         },
         {
           "description": " I took charge of implementing **WebGL** support and integrating cloud platforms such as **BrowserStack** and **BitBar** into our test automation tools for **Unity** apps and games."
@@ -84,6 +84,9 @@
       ]
     },
     {
+      "metadata": {
+        "class": "print:hidden"
+      },
       "name": "Altom Consulting",
       "date": "Jul. 2017 - Sep. 2017",
       "title": "Software Developer Intern",
