@@ -94,7 +94,7 @@
           <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 dark:text-gray-400 print:font-normal">Experience</h2>
 
           {% for workplace in experience %}
-            <section class="mb-5">
+            <section class="mb-5 {{ workplace.metadata.class if "metadata" in workplace else '' }}">
               <header>
                 <h3 class="font-semibold text-lg text-gray-900 dark:text-gray-300 leading-snug">{{ workplace.title }} · {{ workplace.name }}</h3>
                 <p class="font-normal text-md text-gray-600 dark:text-gray-400 leading-normal">{{ workplace.location }} · {{ workplace.date }}</p>
