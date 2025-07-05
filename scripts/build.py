@@ -53,9 +53,10 @@ def apply_overwrite(context):
             continue
 
         if not isinstance(context[key], dict):
+            value_type = type(context[key]).__name__
             raise TypeError(
                 f"Cannot merge dictionaries for key '{key}': "
-                f"the original context contains a value of type {type(context[key]).__name__}, "
+                f"the original context contains a value of type {value_type}, "
                 f"but the overwrite file provides a dictionary. "
                 "Please ensure both values are dictionaries to allow merging."
             )
