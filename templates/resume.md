@@ -36,6 +36,12 @@
 
 {% endfor %}
 
+## Certifications
+
+{% for certification in certifications %}
+  * [{{certification.name}}]({{certification.url}}) ({{certification.date}})
+{% endfor %}
+
 ## Projects
 
 {% for project in projects %}
