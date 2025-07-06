@@ -104,6 +104,36 @@
       ]
     }
   ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "date": "Jul. 2025",
+      "url": "https://learn.microsoft.com/api/credentials/share/en-us/RobertDezmerean/BEB078F346C9D827"
+    },
+    {
+      "name": "GitHub Actions",
+      "date": "Jun. 2025",
+      "url": "https://www.credly.com/badges/e9f95455-f769-4fd0-92cf-de030bd6d688/public_url"
+    },
+    {
+      "name": "GitHub Administration",
+      "date": "Jun. 2025",
+      "url": "https://www.credly.com/badges/2e8435f7-3fa8-4c0b-859c-82f96777845b/public_url"
+    },
+    {
+      "name": "GitHub Advanced Security",
+      "date": "Jun. 2025",
+      "url": "https://www.credly.com/badges/8e439990-feba-4398-99fc-e31e73d64a6e/public_url"
+    },
+    {
+      "metadata": {
+        "class": "print:hidden"
+      },
+      "name": "GitHub Copilot",
+      "date": "Jun. 2025",
+      "url": "https://www.credly.com/badges/ca10a6fd-d3b6-43f0-98e3-ab26190035ef/public_url"
+    }
+  ],
   "projects": [
     {
       "name": "junit-reporter",
