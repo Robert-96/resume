@@ -146,7 +146,7 @@
           </header>
 
           {% for certification in certifications %}
-            <section class="mb-2">
+            <section class="mb-2 {{ certification.metadata.class if "metadata" in certification else '' }}">
               <header class="flex">
                 <h3 class="{{ section_subtitle_classes }}">
                   <a href="{{ certification.url }}" target="_blank" rel="noopener" class="hover:text-green-500 transition duration-100 ease-in">
