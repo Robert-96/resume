@@ -48,7 +48,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white dark:bg-slate-900 text-black dark:text-white">
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-300">
   <main class="font-fira-sans-extralight text-base font-light leading-normal tracking-normal">
     <div class="w-full h-3 bg-gradient-to-r from-lime-500 via-green-500 via-emerald-500 to-teal-500 print:hidden"></div>
 
@@ -64,40 +64,51 @@
           </button>
         </div>
 
-        <p class="mb-1 font-medium text-xl text-gray-700 dark:text-gray-200 leading-normal">{{ info.headline }}</p>
+        <p class="mb-1 font-medium text-xl text-slate-600 dark:text-slate-300 leading-normal">{{ info.headline }}</p>
 
         {% if info.location %}
-          <p>{{ info.location }}</p>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed">{{ info.location }}</p>
         {% endif %}
 
         {% if info.phone %}
-          <p>{{ info.phone }}</p>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed">{{ info.phone }}</p>
         {% endif %}
 
         {% if info.email %}
-          <p>{{ info.email }}</p>
+          <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+            <a href="mailto:{{ info.email }}" class="hover:text-green-500 dark:hover:text-green-400 transition-colors duration-200">
+              {{ info.email }}
+            </a>
+          </p>
         {% endif %}
       </header>
 
+      <!-- GLOBALS -->
+      {% set section_classes = 'mb-6 break-inside-avoid' %}
+      {% set section_title_classes = 'font-semibold mb-4 uppercase tracking-widest text-sm2 text-slate-600 dark:text-slate-300 print:font-normal' %}
+      {% set section_subtitle_classes = 'font-semibold text-lg text-slate-900 dark:text-white leading-snug' %}
+      {% set section_subtitle_info_classes = 'text-base text-slate-500 dark:text-slate-400 mb-1' %}
+      {% set prose_classes = 'prose prose-slate dark:prose-invert text-gray-700 dark:text-gray-300 leading-relaxed' %}
+
       <div id="main" class="md:columns-2 print:columns-2">
-        <section id="about" class="break-inside-avoid">
+        <section id="about" class="{{ section_classes }}">
           <header>
-            <h2 class="font-semibold mb-4 uppercase tracking-widest text-sm2 text-gray-500 dark:text-gray-400 print:font-normal">About Me</h2>
+            <h2 class="{{ section_title_classes }}">About Me</h2>
           </header>
 
-          <div class="mb-3 prose prose-slate prose-strong:text-gray-600 dark:prose-strong:text-gray-300 prose-strong:font-medium dark:prose-invert text-gray-700 dark:text-gray-300">
+          <div class="{{ prose_classes }}">
             {{ summary | markdown }}
           </div>
         </section>
 
-        <section id="experience" class="break-inside-avoid">
-          <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 dark:text-gray-400 print:font-normal">Experience</h2>
+        <section id="experience" class="{{ section_classes }}">
+          <h2 class="{{ section_title_classes }}">Experience</h2>
 
           {% for workplace in experience %}
             <section class="mb-5 {{ workplace.metadata.class if "metadata" in workplace else '' }}">
-              <header>
-                <h3 class="font-semibold text-lg text-gray-900 dark:text-gray-300 leading-snug">{{ workplace.title }} · {{ workplace.name }}</h3>
-                <p class="font-normal text-md text-gray-600 dark:text-gray-400 leading-normal">{{ workplace.location }} · {{ workplace.date }}</p>
+              <header class="mb-2">
+                <h3 class="{{ section_subtitle_classes }}">{{ workplace.title }} · {{ workplace.name }}</h3>
+                <p class="{{ section_subtitle_info_classes }}">{{ workplace.location }} · {{ workplace.date }}</p>
               </header>
 
               <ul>
@@ -105,7 +116,9 @@
                 <li class="mt-2 text-md text-gray-700 dark:text-gray-300 leading-normal">
                   <span class="absolute -ml-3 sm:-ml-3 select-none transform -translate-y-px">›</span>
 
-                  <span class="prose prose-slate prose-strong:text-gray-600 dark:prose-strong:text-gray-300 dark:prose-invert">{{ subsection.description | markdown }}</span>
+                  <span class="{{ prose_classes }}">
+                    {{ subsection.description | markdown }}
+                  </span>
                 </li>
                 {% endfor %}
               </ul>
@@ -113,51 +126,76 @@
           {% endfor %}
         </section>
 
-        <section id="education" class="break-inside-avoid">
-          <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 dark:text-gray-400 print:font-normal">Education</h2>
+        <section id="education" class="{{ section_classes }}">
+          <h2 class="{{ section_title_classes }}">Education</h2>
 
           {% for school in education %}
             <section class="mb-5">
               <header>
-                <h3 class="font-semibold text-lg text-gray-900 dark:text-gray-300 leading-snug">{{ school.name }}</h3>
-                <p class="font-normal text-md text-gray-600 dark:text-gray-400 leading-normal">{{ school.date }} · {{ school.degree }}</p>
+                <h3 class="{{ section_subtitle_classes }}">{{ school.name }}</h3>
+                <p class="{{ section_subtitle_info_classes }}">{{ school.date }}</p>
+                <p class="text-lg text-slate-900 dark:text-slate-100">{{ school.degree }}</p>
               </header>
             </section>
           {% endfor %}
         </section>
 
-        <section id="projects" class="break-inside-avoid">
+        <section id="certifications" class="{{ section_classes }}">
           <header>
-            <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 dark:text-gray-400 print:font-normal">Projects</h2>
+            <h2 class="{{ section_title_classes }}">Certifications</h2>
+          </header>
+
+          {% for certification in certifications %}
+            <section class="mb-2">
+              <header class="flex">
+                <h3 class="{{ section_subtitle_classes }}">
+                  <a href="{{ certification.url }}" target="_blank" rel="noopener" class="hover:text-green-500 transition duration-100 ease-in">
+                    {{ certification.name }}
+                  </a>
+                </h3>
+
+                <span class="ml-3 {{ section_subtitle_info_classes }}">{{ certification.date }}</span>
+              </header>
+            </section>
+          {% endfor %}
+        </section>
+
+        <section id="projects" class="{{ section_classes }}">
+          <header>
+            <h2 class="{{ section_title_classes }}">Projects</h2>
           </header>
 
           {% for project in projects %}
             <section class="mb-5">
               <header>
-                <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-100 leading-snug">
+                <h3 class="{{ section_subtitle_classes }}">
                   <a href="{{ project.url }}" target="_blank" rel="noopener" class="group">
                     {{ project.name }}
-                    <span class="inline-block text-gray-500 dark:text-white print:text-black font-normal group-hover:text-green-500 transition duration-100 ease-in">↗</span>
+                    <!-- <span class="inline-block text-gray-500 dark:text-white print:text-black font-normal group-hover:text-green-500 transition duration-100 ease-in">↗</span> -->
                   </a>
                 </h3>
               </header>
 
-              <div class="prose prose-slate prose-strong:text-gray-600 dark:prose-strong:text-gray-300 dark:prose-invert">
+              <div class="{{ prose_classes }}>">
                 {{ project.description | markdown }}
               </div>
             </section>
           {% endfor %}
         </section>
 
-        <section id="skills" class="break-inside-avoid">
+        <section id="skills" class="{{ section_classes }}">
           <header>
-            <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 dark:text-gray-400 print:font-normal">Skills</h2>
+            <h2 class="{{ section_title_classes }}">Skills</h2>
           </header>
 
           <div class="my-3 last:pb-2">
-            <ul class="flex flex-wrap text-md leading-relaxed -mr-2 -mb-2">
+            <ul class="flex flex-wrap gap-2 text-md leading-relaxed">
               {% for skill in skills %}
-                <li class="px-2 mr-2 mb-2 text-base font-normal text-gray-700 dark:text-gray-200 print:bg-white print:border print:border-gray-700 bg-gray-200 dark:bg-gray-700">
+                <!-- <li class="px-2 mr-2 mb-2 text-base font-normal text-gray-700 dark:text-gray-200 print:bg-white print:border print:border-gray-700 bg-gray-200 dark:bg-gray-700">
+                  {{ skill }}
+                </li> -->
+
+                <li class="px-2 py-1 bg-slate-50 dark:bg-slate-900/20 text-slate-700 dark:text-slate-300 text-sm font-medium border border-slate-200 dark:border-slate-700">
                   {{ skill }}
                 </li>
               {% endfor %}
@@ -165,15 +203,15 @@
           </div>
         </section>
 
-        <section id="interests" class="break-inside-avoid">
+        <section id="interests" class="{{ section_classes }} print:hidden">
           <header>
-            <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 dark:text-gray-400 print:font-normal">Interests</h2>
+            <h2 class="{{ section_title_classes }}">Interests</h2>
           </header>
 
           <div class="my-3 last:pb-2">
-            <ul class="flex flex-wrap text-md leading-relaxed -mr-2 -mb-2">
+            <ul class="flex flex-wrap gap-2 text-md leading-relaxed">
               {% for interest in interests %}
-                <li class="px-2 mr-2 mb-2 text-base font-normal text-gray-700 dark:text-gray-200 print:bg-white print:border print:border-gray-700 bg-gray-200 dark:bg-gray-700">
+                <li class="px-2 py-1 bg-slate-50 dark:bg-slate-900/20 text-slate-700 dark:text-slate-300 text-sm font-medium border border-slate-200 dark:border-slate-700">
                   {{ interest }}
                 </li>
               {% endfor %}
@@ -181,9 +219,9 @@
           </div>
         </section>
 
-        <section id="contact" class="break-inside-avoid">
+        <section id="contact" class="{{ section_classes }}">
           <header>
-            <h2 class="mb-4 font-bold uppercase tracking-widest text-sm2 text-gray-500 dark:text-gray-400 print:font-normal">Contact</h2>
+            <h2 class="{{ section_title_classes }}">Contact</h2>
           </header>
 
           <ul class="list-inside pr-7">
@@ -191,9 +229,8 @@
             <li class="mt-1 leading-normal text-gray-500 dark:text-gray-300 text-md">
               {{ item.name }}:
 
-              <a href="{{ item.url }}" target="_blank" rel="noopener" class="group text-gray-700 dark:text-white">
+              <a href="{{ item.url }}" target="_blank" rel="noopener" class="font-semibold group text-slate-600 dark:text-slate-300 leading-normal hover:text-green-500 transition duration-100 ease-in">
                 {{ item.display }}
-                <span class="inline-block print:text-black font-normal group-hover:text-green-500 transition duration-100 ease-in">↗</span>
               </a>
             </li>
             {% endfor %}
