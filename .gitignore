@@ -244,3 +244,6 @@ templates/css/tailwind.css
 
 # Overwrite file
 data/overwrites.json
+
+# MacOS
+.DS_Store
