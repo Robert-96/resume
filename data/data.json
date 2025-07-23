@@ -2,7 +2,6 @@
   "info": {
     "name": "Dezmerean Robert",
     "headline": "Software Developer",
-    "location": "Cluj-Napoca, Romania",
     "twitter": "@dezmereanrobert"
   },
   "url": "http://resume.dezmereanrobert.com/",
@@ -50,19 +49,19 @@
       "location": "Remote",
       "subsections": [
         {
-          "description": "Develop, maintain, and enhance dashboards using **Azure Data Explorer** and **KQL** that provide comprehensive visibility into Azure sovereign cloud buildout progress and resource deployment status."
+          "description": "Create interactive data visualizations through **Azure Data Explorer dashboards** and **PowerBI**, providing executive-level insights into Azure sovereign cloud deployment status across multiple cloud environments and regions."
         },
         {
           "description": "Building internal tools that **enhance automation** capabilities, eliminating manual processes, and reducing human error."
         },
         {
-          "description": "Analyze deployment data using **pandas** and **numpy** to generate comprehensive reports, enabling strategic decisions that increase automation maturity and advance **infrastructure-as-code** adoption across **Azure Core**."
+          "description": "Analyze complex deployment datasets using **pandas** and **numpy** to generate strategic reports, driving **infrastructure-as-code** adoption and increasing automation maturity across **Azure Core**."
         }
       ]
     },
     {
       "name": "Altom Consulting",
-      "date": "Oct. 2017 - Apr. 2024",
+      "date": "October 2017 - April 2024",
       "title": "Software Developer",
       "location": "Cluj-Napoca, RO",
       "subsections": [
@@ -88,7 +87,7 @@
         "class": "print:hidden"
       },
       "name": "Altom Consulting",
-      "date": "Jul. 2017 - Sep. 2017",
+      "date": "July 2017 - September 2017",
       "title": "Software Developer Intern",
       "location": "Cluj-Napoca, RO",
       "subsections": [
