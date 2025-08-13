@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 
 import markdown2
 from rost import Rost
@@ -9,7 +10,7 @@ from .config import CONFIG
 logger = logging.getLogger(__name__)
 
 
-def get_context():
+def get_context_file():
     """Load the main context from the data file."""
 
     with open(CONFIG.data_path) as fp:
@@ -66,6 +67,24 @@ def apply_overwrite(context):
     return context
 
 
+def get_environment_variables():
+    """Return a dictionary of environment variables to be used in the context."""
+
+    env_var_names = [
+        "APP_INSIGHTS_CONNECTION_STRING",
+    ]
+    return {name: os.getenv(name) for name in env_var_names}
+
+
+def get_context():
+    """Get the context for the Rost generator, merging main and overwrite contexts."""
+
+    context = get_context_file()
+    context["env"] = get_environment_variables()
+
+    return apply_overwrite(context)
+
+
 def build(debug=False):
     generator = Rost(
         searchpath="templates",
@@ -74,7 +93,7 @@ def build(debug=False):
         filters={
             "markdown": lambda x: markdown2.markdown(x)
         },
-        contexts=[(".", lambda: apply_overwrite(get_context()))],
+        contexts=[(".", lambda: get_context())],
     )
 
     if debug:
