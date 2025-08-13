@@ -68,7 +68,11 @@ def apply_overwrite(context):
 
 
 def get_environment_variables():
-    """Return a dictionary of environment variables to be used in the context."""
+    """Retrieve environment variables that are needed for the build process.
+
+    Returns:
+        dict: A dictionary containing the environment variables.
+    """
 
     env_var_names = [
         "APP_INSIGHTS_CONNECTION_STRING",
@@ -77,7 +81,14 @@ def get_environment_variables():
 
 
 def get_context():
-    """Get the context for the Rost generator, merging main and overwrite contexts."""
+    """Get the complete context for the build process.
+
+    This includes the main context from the data file, environment variables,
+    and any overwrites specified in the overwrite file.
+
+    Returns:
+        dict: The merged context containing data and environment variables.
+    """
 
     context = get_context_file()
     context["env"] = get_environment_variables()
