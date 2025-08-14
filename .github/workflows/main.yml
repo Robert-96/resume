@@ -4,6 +4,7 @@ on: ['push']
 
 env:
   NODE_VERSION: '18.x'
+  PYTHON_VERSION: '3.10'
 
 jobs:
   lint:
@@ -12,9 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install dependencies
         run: |
@@ -28,16 +30,13 @@ jobs:
     needs: lint
     runs-on: ubuntu-latest
 
-    environment:
-      name: prod
-
     steps:
       - uses: actions/checkout@v5
 
-      - name: Setup Python 3.10
+      - name: Setup Python ${{ env.PYTHON_VERSION }}
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install pip dependencies
         run: |
@@ -54,8 +53,6 @@ jobs:
           npm install
 
       - name: Build
-        env:
-            APP_INSIGHTS_CONNECTION_STRING: ${{ secrets.APP_INSIGHTS_CONNECTION_STRING }}
         run: |
           npm run build-prod
 
@@ -63,11 +60,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build
-          path: 'dist/'
-
-      - name: Upload page artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
           path: 'dist/'
 
   lighthouse:
@@ -97,22 +89,3 @@ jobs:
           lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_TOKEN }}
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    if: github.ref == 'refs/heads/main'
-
-    permissions:
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
