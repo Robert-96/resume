@@ -1,29 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "partial/_base.html" %}
 
-  <title>{{ info.name }} | Cover Letter</title>
+{% block title %}{{ info.name }} | Cover Letter Template{% endblock %}
 
+{% block extra_head %}
   <meta name="robots" content="noindex">
+{% endblock %}
 
-  <script src="https://cdn.tailwindcss.com/3.1.8?plugins=typography"></script>
-</head>
-<body class="font-sans font-light leading-normal tracking-normal">
-  <div class="w-full h-3 bg-gradient-to-r from-lime-500 via-green-500 via-emerald-500 to-teal-500"></div>
+{% block main_content %}
+  <header class="mb-6">
+    <div class="flex items-center justify-between mb-4">
+      <h1 class="font-black text-5xl text-gray-900 dark:text-white pb-px">{{ info.name }}</h1>
 
-  <div class="min-h-screen py-8 flex flex-col justify-center overflow-hidden lg:py-12">
-    <div class="w-full px-6 py-12 md:max-w-3xl md:mx-auto lg:max-w-4xl lg:pt-16 lg:pb-28">
-
-      <div class="mt-8 prose prose-green mx-auto lg:prose-lg">
-        <h1 class="mb-1 xl:mb-1">Dezmerean Robert</h1>
-        <p class="lead mt-1 xl:mt-1">Software Developer</p>
-
-        <!-- Copy text here! -->
-      </div>
+      <button id="toggle-dark-mode-button" aria-label="Toggle Dark Mode" class="print:hidden cursor-pointer">
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="dark:hidden size-7 text-gray-900 dark:text-gray-100"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="hidden dark:block size-7 text-gray-900 dark:text-gray-100"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+      </button>
     </div>
+
+    <p class="mb-1 font-medium text-xl text-slate-600 dark:text-slate-300 leading-normal">{{ info.headline }}</p>
+  </header>
+
+  <div class="mt-8 prose prose-green mx-auto lg:prose-lg">
+    <!-- Copy text here! -->
   </div>
-</body>
-</html>
+{% endblock %}
