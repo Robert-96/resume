@@ -65,6 +65,14 @@ See the deploy job from [main.yml](.github/workflows/main.yml).
 
 ## Save as PDF
 
+### Script
+
+You can generate a PDF version of the resume using the provided Puppeteer script. Run the following command:
+
+```bash
+node tests/pdf.js
+```
+
 ### Chrome
 
 1. Right-click on the page and select "Print."
