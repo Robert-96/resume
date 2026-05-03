@@ -21,6 +21,6 @@
   </header>
 
   <div class="mt-8 prose prose-green mx-auto lg:prose-lg">
-    <!-- Copy text here! -->
+    {{ cover_letter | markdown | safe }}
   </div>
 {% endblock %}
