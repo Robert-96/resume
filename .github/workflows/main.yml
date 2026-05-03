@@ -33,6 +33,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Load env variables
+        run: |
+          cat .github/common.env >> "$GITHUB_ENV"
+
       - name: Setup Python ${{ env.PYTHON_VERSION }}
         uses: actions/setup-python@v6
         with:
@@ -68,6 +72,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+
+      - name: Load env variables
+        run: |
+          cat .github/common.env >> "$GITHUB_ENV"
 
       - name: Setup Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v6
