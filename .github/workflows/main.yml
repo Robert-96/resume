@@ -1,6 +1,14 @@
 name: Main
 
-on: ['push', 'workflow_dispatch']
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      skipLighthouse:
+        description: 'Skip Lighthouse step'
+        required: true
+        default: false
+        type: boolean
 
 jobs:
   lint:
@@ -67,6 +75,8 @@ jobs:
           path: 'dist/'
 
   lighthouse:
+    if: ${{ inputs.skipLighthouse == 'false' }}
+
     needs: build
     runs-on: ubuntu-latest
 
