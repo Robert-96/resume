@@ -75,7 +75,7 @@ jobs:
           path: 'dist/'
 
   lighthouse:
-    if: ${{ inputs.skipLighthouse == 'false' }}
+    if: ${{ inputs.skipLighthouse == false }}
 
     needs: build
     runs-on: ubuntu-latest
