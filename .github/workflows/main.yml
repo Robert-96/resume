@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v6
+
       - name: Load env variables
         run: |
           cat .github/common.env >> "$GITHUB_ENV"
-
-      - uses: actions/checkout@v6
 
       - name: Setup Python ${{ env.PYTHON_VERSION }}
         uses: actions/setup-python@v6
