@@ -2,15 +2,15 @@ name: Main
 
 on: ['push']
 
-env:
-  NODE_VERSION: '22.x'
-  PYTHON_VERSION: '3.14'
-
 jobs:
   lint:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Load env variables
+        run: |
+          cat .github/common.env >> "$GITHUB_ENV"
+
       - uses: actions/checkout@v6
 
       - name: Setup Python ${{ env.PYTHON_VERSION }}
