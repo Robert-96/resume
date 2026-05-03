@@ -11,6 +11,12 @@ class Config:
             "./data/data.json",
             exists=True
         )
+        self.cover_letter_path = self.get_path_from_env(
+            "RESUME_COVER_LETTER_PATH",
+            "./data/cover_letter.md",
+            exists=True
+        )
+
         self.disable_overwrites = self.get_boolean_from_env(
             "RESUME_DISABLE_OVERWRITES",
             default=False
@@ -20,6 +26,7 @@ class Config:
             "./data/overwrites.json",
             exists=False
         )
+
         self.debug = self.get_boolean_from_env(
             "RESUME_DEBUG",
             default=False

@@ -17,6 +17,13 @@ def get_context_file():
         return json.load(fp)
 
 
+def get_cover_letter():
+    """Load the cover letter from the cover letter file."""
+
+    with open(CONFIG.cover_letter_path) as fp:
+        return fp.read()
+
+
 def get_overwrite_context():
     """Load the overwrite context from the overwrite file."""
 
@@ -92,6 +99,8 @@ def get_context():
 
     context = get_context_file()
     context["env"] = get_environment_variables()
+
+    context["cover_letter"] = get_cover_letter()
 
     return apply_overwrite(context)
 
