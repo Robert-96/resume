@@ -1,11 +1,11 @@
 {
   "info": {
     "name": "Dezmerean Robert",
-    "headline": "Software Developer",
+    "headline": "Software Engineer",
     "twitter": "@dezmereanrobert"
   },
-  "url": "http://resume.dezmereanrobert.com/",
-  "summary": "Results-driven **Software Developer** with **7+ years of experience** designing and implementing **scalable cloud solutions** and **automation tools**. Currently developing **Azure infrastructure tools** at **Microsoft**, with proven expertise in **Python**, **JavaScript**, **.NET**, and **modern web frameworks**. Strong track record of bridging technical implementation with business objectives, contributing to **open-source** projects, with a proven ability to bridge technical implementation and business objectives.",
+  "url": "http://resume.dezmereanrobert.com/id=21",
+  "summary": "Results-driven **Software Engineer** with **9+ years of experience** designing and implementing **scalable cloud solutions** and **automation tools**. Currently accelerating **Azure sovereign cloud** and **new region buildouts** through **data analysis** and **automation** at **Microsoft**, with proven expertise in **Python**, **JavaScript**, **.NET**, and **modern web frameworks**. Strong track record of bridging technical implementation with business objectives and contributing to **open-source** projects.",
   "social": [
     {
       "name": "Email",
@@ -49,13 +49,19 @@
       "location": "Remote",
       "subsections": [
         {
-          "description": "Create interactive data visualizations through **Azure Data Explorer dashboards** and **PowerBI**, providing executive-level insights into Azure sovereign cloud deployment status across multiple cloud environments and regions."
+          "description": "Accelerate Azure sovereign cloud and new region buildouts by analyzing deployment data to uncover automation gaps, bottlenecks, and recurring errors, reducing buildout time."
         },
         {
-          "description": "Building internal tools that **enhance automation** capabilities, eliminating manual processes, and reducing human error."
+          "description": "Automate manual buildout steps across 3 sovereign cloud environments, eliminating human error and making deployments repeatable."
         },
         {
-          "description": "Analyze complex deployment datasets using **pandas** and **numpy** to generate strategic reports, driving **infrastructure-as-code** adoption and increasing automation maturity across **Azure Core**."
+          "description": "Perform root-cause analysis on buildout failures and delays across new region buildouts, identifying systemic issues (e.g., dependency ordering, retries, manual operations) and driving fixes."
+        },
+        {
+          "description": "Partner with 20+ Azure engineering teams to optimize their buildout workflows, turning analysis into prioritized, tracked improvements."
+        },
+        {
+          "description": "Build **Azure Data Explorer** and **Power BI** dashboards and **pandas/numpy** reports that track deployment status, automation progress, and standardization across buildouts and environments, giving visibility and driving **infrastructure-as-code** adoption across **Azure Core**."
         }
       ]
     },
@@ -176,7 +182,11 @@
     "MongoDB",
     "SQL",
     "Git",
-    "Bash / Shell"
+    "Bash / Shell",
+    "Azure Data Explorer / KQL",
+    "pandas",
+    "Infrastructure as Code",
+    "Azure"
   ],
   "interests": [
     "Drawing",
