@@ -5,7 +5,7 @@
     "twitter": "@dezmereanrobert"
   },
   "url": "http://resume.dezmereanrobert.com/id=21",
-  "summary": "Results-driven **Software Engineer** with **9+ years of experience** designing and implementing **scalable cloud solutions** and **automation tools**. Currently accelerating **Azure sovereign cloud** and **new region buildouts** through **data analysis** and **automation** at **Microsoft**, with proven expertise in **Python**, **JavaScript**, **.NET**, and **modern web frameworks**. Strong track record of bridging technical implementation with business objectives and contributing to **open-source** projects.",
+  "summary": "**Software Engineer** with **9+ years of experience** building automation and cloud tooling in **Python**, **.NET**, and **JavaScript**. Currently accelerating **Azure sovereign cloud** and new region buildouts at Microsoft through deployment data analysis, automation, and cross-team optimization. Creator and maintainer of **AltWalker**, an open-source testing framework with **50K+ downloads**.",
   "social": [
     {
       "name": "Email",
@@ -26,11 +26,6 @@
       "name": "GitHub",
       "url": "https://www.github.com/robert-96/",
       "display": "@robert-96"
-    },
-    {
-      "name": "Twitter",
-      "url": "https://twitter.com/dezmereanrobert",
-      "display": "@dezmereanrobert"
     }
   ],
   "education": [
@@ -49,19 +44,19 @@
       "location": "Remote",
       "subsections": [
         {
-          "description": "Accelerate Azure sovereign cloud and new region buildouts by analyzing deployment data to uncover automation gaps, bottlenecks, and recurring errors, reducing buildout time."
+          "description": "Accelerate **Azure sovereign cloud** and new region buildouts by analyzing deployment data to uncover automation gaps, bottlenecks, and recurring errors, reducing **buildout time**."
         },
         {
-          "description": "Automate manual buildout steps across 3 sovereign cloud environments, eliminating human error and making deployments repeatable."
+          "description": "Automate manual buildout steps across **3 sovereign cloud environments** using **ARM** and **Bicep**, eliminating human error and making deployments repeatable."
         },
         {
-          "description": "Perform root-cause analysis on buildout failures and delays across new region buildouts, identifying systemic issues (e.g., dependency ordering, retries, manual operations) and driving fixes."
+          "description": "Perform **root-cause analysis** on buildout failures and delays across new regions, identifying systemic issues such as dependency ordering, retries, and **manual operations**, and driving fixes that reduced **deployment failure rates**."
         },
         {
-          "description": "Partner with 20+ Azure engineering teams to optimize their buildout workflows, turning analysis into prioritized, tracked improvements."
+          "description": "Partner with **20+ Azure engineering teams** to optimize their buildout workflows, turning analysis into prioritized, tracked improvements."
         },
         {
-          "description": "Build **Azure Data Explorer** and **Power BI** dashboards and **pandas/numpy** reports that track deployment status, automation progress, and standardization across buildouts and environments, giving visibility and driving **infrastructure-as-code** adoption across **Azure Core**."
+          "description": "Build **Azure Data Explorer (KQL)** and **Power BI** dashboards and **pandas/NumPy** reports that track deployment status, automation progress, and standardization across buildouts and environments, driving **Infrastructure as Code** adoption across **Azure Core**."
         }
       ]
     },
@@ -72,19 +67,19 @@
       "location": "Cluj-Napoca, RO",
       "subsections": [
         {
-          "description": "Designed, developed, and maintained AltWalker, an **open-source Model-Based Testing framework** supporting **Python** and **.NET/C#**, downloaded 50K+ times and integrated by 20+ organizations into testing workflows."
+          "description": "Created and maintained **AltWalker**, an open-source **Model-Based Testing framework** for **Python** and **.NET/C#**, reaching **50K+ downloads** and adoption by **20+ organizations**."
         },
         {
-          "description": "Implemented and optimized **CI/CD pipelines** across **Jenkins**, **GitLab CI/CD**, and **GitHub Actions**, reducing deployment time by 30% and improving code quality metrics."
+          "description": "Built and optimized **CI/CD pipelines** across **Jenkins**, **GitLab CI/CD**, and **GitHub Actions** for **5+ projects**, cutting deployment time by up to **30%**."
         },
         {
-          "description": "Led organization and supervision of online **Model-Based Testing workshops**, training **100+ participants** through hands-on practical exercises."
+          "description": "Built **Flask** and **MongoDB** REST APIs plus an **Ember.js** test-report dashboard, supporting automated reporting across **10+ projects/teams**."
         },
         {
-          "description": "Built scalable **RESTful APIs** using **Flask** and **MongoDB**, and developed responsive web applications with **Ember.js** for test report visualization, optimizing response times to under 200ms for all endpoints."
+          "description": "Extended test automation tooling for **Unity** apps with **WebGL** support and **BrowserStack/BitBar** device-cloud integration, enabling automated testing across mobile and web."
         },
         {
-          "description": "Integrated **WebGL** support and cloud platforms (**BrowserStack**, **BitBar**) into test automation tools for **Unity applications**, expanding testing capabilities across mobile and web platforms."
+          "description": "Led **5** online Model-Based Testing workshops, training **100+** engineers through hands-on exercises."
         }
       ]
     },
@@ -101,10 +96,7 @@
           "description": "Implemented **feature enhancements** and resolved **critical bugs** as part of an **agile development** team, contributing to 3 major product releases."
         },
         {
-          "description": "Participated in **peer programming sessions**, **code reviews**, and **daily stand-ups**, improving code quality and team collaboration."
-        },
-        {
-          "description": "Collaborated with senior developers to **enhance programming skills** and adopt **best practices** for software development."
+          "description": "Collaborated through **code reviews** and **pair programming** with senior developers."
         }
       ]
     }
@@ -116,7 +108,7 @@
       "url": "https://learn.microsoft.com/api/credentials/share/en-us/RobertDezmerean/BEB078F346C9D827"
     },
     {
-      "name": " Microsoft Certified: Azure Data Fundamentals",
+      "name": "Microsoft Certified: Azure Data Fundamentals",
       "date": "Jul. 2025",
       "url": "https://learn.microsoft.com/api/credentials/share/en-us/RobertDezmerean/C999A104F136D660"
     },
@@ -146,47 +138,52 @@
   ],
   "projects": [
     {
-      "name": "junit-reporter",
-      "url": "https://github.com/Robert-96/junit-reporter",
-      "description": "A Python3 package that generates test results in the standard **JUnit XML** format for use with **Jenkins** and other build integration servers."
+      "name": "AltWalker",
+      "url": "https://github.com/altwalker/altwalker",
+      "description": "Open-source **Model-Based Testing framework** with **50K+ downloads**, used by **20+ organizations**."
     },
     {
       "name": "live-viewer",
       "url": "https://github.com/altwalker/live-viewer",
-      "description": "A **web application** for visualizing the progress of an AltWalker test run build using **WebSockets**."
+      "description": "**JavaScript** and **WebSockets** web app that streams the progress of an AltWalker test run in real time."
     },
     {
-      "name": "tox-docker",
-      "url": "https://github.com/Robert-96/tox-docker",
-      "description": "**Docker** image for running **tox** with Python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, PyPy and PyPy3."
+      "name": "junit-reporter",
+      "url": "https://github.com/Robert-96/junit-reporter",
+      "description": "**Python** package that generates standard **JUnit XML** test results for **Jenkins** and other CI servers."
     }
   ],
   "skills": [
-    "TDD",
-    "CI/CD",
-    "OOP",
-    "Agile Frameworks",
-    "Unit Testing",
-    "Debugging",
+    "Azure",
+    "Azure Data Explorer",
+    "KQL",
+    "Power BI",
+    "Infrastructure as Code",
+    "ARM",
+    "Bicep",
     "Python",
-    "WebSockets",
-    "Flask",
-    "FAST API",
-    "Docker",
+    "C#/.NET",
     "JavaScript",
+    "SQL",
+    "Bash",
+    "pandas",
+    "NumPy",
+    "Flask",
+    "FastAPI",
     "Node.js",
+    "Express.js",
     "Ember.js",
     "Vue.js",
-    "Express.js",
-    ".NET",
+    "WebSockets",
     "MongoDB",
-    "SQL",
+    "Docker",
     "Git",
-    "Bash / Shell",
-    "Azure Data Explorer / KQL",
-    "pandas",
-    "Infrastructure as Code",
-    "Azure"
+    "GitHub Actions",
+    "GitLab CI/CD",
+    "Model-Based Testing",
+    "TDD",
+    "CI/CD",
+    "Agile"
   ],
   "interests": [
     "Drawing",
