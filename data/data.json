@@ -5,7 +5,7 @@
     "twitter": "@dezmereanrobert"
   },
   "url": "http://resume.dezmereanrobert.com/id=21",
-  "summary": "**Software Engineer** with **9+ years of experience** building automation and cloud tooling in **Python**, **.NET**, and **JavaScript**. Currently accelerating **Azure sovereign cloud** and new region buildouts at Microsoft through deployment data analysis, automation, and cross-team optimization. Creator and maintainer of **AltWalker**, an open-source testing framework with **50K+ downloads**.",
+  "summary": "**Software Engineer** specializing in **cloud automation**, **backend infrastructure**, and **developer tooling**, with 9+ years of experience using **Python**, **.NET**, and **JavaScript**. Currently accelerating **Azure sovereign cloud** and new region buildouts at Microsoft through deployment data analysis, automation, and cross-team optimization.",
   "social": [
     {
       "name": "Email",
@@ -140,17 +140,17 @@
     {
       "name": "AltWalker",
       "url": "https://github.com/altwalker/altwalker",
-      "description": "Open-source **Model-Based Testing framework** with **50K+ downloads**, used by **20+ organizations**."
+      "description": "Created and maintained this open-source **Model-Based Testing framework** for **Python** and **.NET/C#**, including its planner, executor, and reporting architecture, releases, automated tests, documentation, and community support; reached **50K+ downloads** and adoption by **20+ organizations**."
     },
     {
       "name": "live-viewer",
       "url": "https://github.com/altwalker/live-viewer",
-      "description": "**JavaScript** and **WebSockets** web app that streams the progress of an AltWalker test run in real time."
+      "description": "Built a **Python** CLI and server with a **JavaScript** UI that streams AltWalker test execution over **WebSockets**, providing real-time model progress monitoring with unit and integration tests."
     },
     {
       "name": "junit-reporter",
       "url": "https://github.com/Robert-96/junit-reporter",
-      "description": "**Python** package that generates standard **JUnit XML** test results for **Jenkins** and other CI servers."
+      "description": "Created a **Python** package that models test suites and cases and serializes them to standard **JUnit XML** for **Jenkins** and other CI servers."
     }
   ],
   "skills": [
