@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Robert-96/resume#readme",
   "devDependencies": {
-    "@lhci/cli": "^0.15.1",
+    "@lhci/cli": "^0.16.0",
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
     "jest": "^30.5.2",
